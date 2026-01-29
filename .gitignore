@@ -3,6 +3,7 @@ content/gallery/*.jpg
 content/gallery/*.JPG
 content/gallery/*.jpeg
 content/gallery/*.png
+content/gallery/Piclist.txt
 
 # Hugo build cache
 .hugo_build.lock
