@@ -6,10 +6,10 @@ body {
   background-attachment: fixed !important;
 }
 
-/* About page - smaller logo top-left */
+/* About page - smaller logo centered at top */
 body.about {
-  background-size: 20% !important;
-  background-position: top left !important;
+  background-size: 15% !important;
+  background-position: top center !important;
 }
 
 /* Social icon hover brand colors */
