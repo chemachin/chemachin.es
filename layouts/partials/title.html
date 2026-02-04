@@ -1,0 +1,10 @@
+{{ $isHome := or (eq .RelPermalink "/") (eq .RelPermalink "/es/") }}
+{{ $isAbout := or (eq .RelPermalink "/about/") (eq .RelPermalink "/es/about/") }}
+{{ if and .Title (not $isHome) (not $isAbout) }}
+  <hgroup>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.Description }}
+      <p>{{ . | markdownify }}</p>
+    {{ end }}
+  </hgroup>
+{{ end }}
