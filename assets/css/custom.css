@@ -5,6 +5,13 @@ body {
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
 }
+
+/* About page - smaller logo top-left */
+body.about {
+  background-size: 20% !important;
+  background-position: top left !important;
+}
+
 /* Social icon hover brand colors */
 .social-icons a {
   color: inherit;
