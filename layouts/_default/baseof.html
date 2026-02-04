@@ -7,17 +7,26 @@
       body {
         background-position: 22% 18% !important;
         background-size: 12% !important;
+        overflow: hidden;
       }
       main {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: calc(100vh - 200px);
-        padding: 2rem;
+        height: calc(100vh - 120px);
+        padding: 0 2rem;
+        overflow: hidden;
       }
       main > * {
-        max-width: 800px;
+        max-width: 700px;
         text-align: center;
+      }
+      main p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+        color: rgba(255, 255, 255, 0.85);
+        font-weight: 300;
       }
     </style>
   {{ end }}
