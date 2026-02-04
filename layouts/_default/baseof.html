@@ -5,8 +5,19 @@
   {{ if or (eq .RelPermalink "/about/") (eq .RelPermalink "/es/about/") }}
     <style>
       body {
-        background-position: 28% 25% !important;
+        background-position: 22% 18% !important;
         background-size: 12% !important;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 200px);
+        padding: 2rem;
+      }
+      main > * {
+        max-width: 800px;
+        text-align: center;
       }
     </style>
   {{ end }}
