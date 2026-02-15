@@ -77,6 +77,11 @@ body.home footer {
 
 /* Mobile adjustments for quote */
 @media (max-width: 768px) {
+  body.home {
+    background-position: center 35% !important;
+    background-size: 60% !important;
+  }
+  
   body.home .home-quote {
     bottom: 140px;
     max-width: 90%;
