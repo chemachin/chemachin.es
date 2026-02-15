@@ -19,8 +19,8 @@ body.about {
 
 /* Home quote between logo and social icons */
 body.home {
-  height: 100vh;
-  overflow: hidden;
+  height: auto;
+  overflow: auto;
 }
 
 body.home main {
