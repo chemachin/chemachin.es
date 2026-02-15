@@ -18,9 +18,14 @@ body.about {
 }
 
 /* Home quote between logo and social icons */
+body.home {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body.home main {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 160px);
   padding: 0 2rem;
 }
 
