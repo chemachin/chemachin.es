@@ -15,6 +15,12 @@ html body.about {
 body.about {
   background-size: 12% !important;
   background-position: 22% 18% !important;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+body.about main {
+  padding-bottom: 120px;
 }
 
 /* Home quote between logo and social icons */
