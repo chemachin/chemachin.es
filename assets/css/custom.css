@@ -81,6 +81,11 @@ body.home footer {
     background-position: center 34% !important;
     background-size: 65% !important;
   }
+
+  body.gallery {
+    background-position: center 34% !important;
+    background-size: 65% !important;
+  }
   
   body.home .home-quote {
     bottom: 170px;

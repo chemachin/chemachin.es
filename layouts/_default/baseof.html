@@ -34,7 +34,8 @@
   {{ end }}
   {{- $isHome := or (eq .RelPermalink "/") (eq .RelPermalink "/es/") -}}
   {{- $isAbout := or (eq .RelPermalink "/about/") (eq .RelPermalink "/es/about/") -}}
-  <body{{ if or $isHome $isAbout }} class="{{ if $isHome }}home{{ end }}{{ if and $isHome $isAbout }} {{ end }}{{ if $isAbout }}about{{ end }}"{{ end }}>
+  {{- $isGallery := or (eq .RelPermalink "/gallery/") (eq .RelPermalink "/es/gallery/") -}}
+  <body{{ if or $isHome $isAbout $isGallery }} class="{{ if $isHome }}home{{ end }}{{ if and $isHome $isAbout }} {{ end }}{{ if $isAbout }}about{{ end }}{{ if and (or $isHome $isAbout) $isGallery }} {{ end }}{{ if $isGallery }}gallery{{ end }}"{{ end }}>
     {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
     <main>
       {{ block "main" . }}{{ end }}
