@@ -209,7 +209,16 @@
       const thumbnails = document.querySelectorAll('.thumbnail');
       const mainImage = document.getElementById('main-image');
       const centralPhotoTitle = document.getElementById('central-photo-title');
+      const thumbnailsContainer = document.querySelector('.thumbnails-container');
       const STORAGE_KEY = 'galleryPhotoIndex';
+
+      if (thumbnailsContainer) {
+        thumbnailsContainer.addEventListener('wheel', (event) => {
+          if (event.deltaY === 0) return;
+          event.preventDefault();
+          thumbnailsContainer.scrollLeft += event.deltaY;
+        }, { passive: false });
+      }
 
       function getStoredIndex() {
         const v = parseInt(localStorage.getItem(STORAGE_KEY), 10);
