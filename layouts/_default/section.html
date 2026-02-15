@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ if ne .Type "gallery" }}
+  {{ if and (ne .Type "gallery") (ne .Type "photography") }}
     {{ partial "title.html" . }}
   {{ end }}
   

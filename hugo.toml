@@ -49,7 +49,7 @@ defaultContentLanguage = 'en'
         url = "/es/"
         weight = 1
       [[languages.es.menu.main]]
-        name = "Galería"
+        name = "Fotografía"
         url = "/es/photography/"
         weight = 2
       [[languages.es.menu.main]]
