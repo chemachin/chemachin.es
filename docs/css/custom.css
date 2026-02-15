@@ -5,6 +5,42 @@ body {
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
 }
+
+/* About page - smaller logo top-left */
+html body.about {
+  background-size: 12% !important;
+  background-position: 20px 20px !important;
+}
+
+body.about {
+  background-size: 12% !important;
+  background-position: 20px 20px !important;
+}
+
+/* Home quote between logo and social icons */
+body.home main {
+  position: relative;
+  min-height: 100vh;
+  padding: 0 2rem;
+}
+
+body.home .home-quote {
+  position: fixed;
+  left: 50%;
+  bottom: 90px;
+  transform: translateX(-50%);
+  max-width: 720px;
+  text-align: center;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  z-index: 2;
+}
 /* Social icon hover brand colors */
 .social-icons a {
   color: inherit;
