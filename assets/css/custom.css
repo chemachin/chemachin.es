@@ -79,12 +79,12 @@ body.home footer {
 @media (max-width: 768px) {
   body.home {
     background-position: center 34% !important;
-    background-size: 65% !important;
+    background-size: 70% !important;
   }
 
   body.gallery {
     background-position: center 34% !important;
-    background-size: 65% !important;
+    background-size: 70% !important;
   }
   
   body.home .home-quote {
@@ -109,7 +109,7 @@ body.home footer {
   }
   
   body.home footer {
-    bottom: -8px;
+    bottom: -20px;
   }
 }
 
