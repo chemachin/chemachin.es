@@ -50,7 +50,7 @@ body.home .home-quote {
 body.home footer {
   position: fixed;
   left: 0;
-  bottom: 20px;
+  bottom: 10px;
   width: 100%;
   z-index: 1;
 }
