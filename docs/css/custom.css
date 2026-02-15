@@ -46,6 +46,16 @@ body.home .home-quote {
   padding: 0 1.5rem;
   z-index: 2;
 }
+
+@media (min-width: 2000px) {
+  body.home main {
+    min-height: calc(100vh - 180px);
+  }
+
+  body.home .home-quote {
+    bottom: 110px;
+  }
+}
 /* Social icon hover brand colors */
 .social-icons a {
   color: inherit;
