@@ -26,8 +26,8 @@ defaultContentLanguage = 'en'
         url = "/"
         weight = 1
       [[languages.en.menu.main]]
-        name = "Gallery"
-        url = "/gallery/"
+        name = "Photography"
+        url = "/photography/"
         weight = 2
       [[languages.en.menu.main]]
         name = "About"
@@ -50,7 +50,7 @@ defaultContentLanguage = 'en'
         weight = 1
       [[languages.es.menu.main]]
         name = "Galería"
-        url = "/es/gallery/"
+        url = "/es/photography/"
         weight = 2
       [[languages.es.menu.main]]
         name = "Acerca de"

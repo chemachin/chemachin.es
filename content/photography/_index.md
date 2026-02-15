@@ -1,5 +1,5 @@
 +++
-title = "Gallery"
+title = "Photography"
 date = 2024-01-19
 weight = 1
 sort_by = "Params.weight"
