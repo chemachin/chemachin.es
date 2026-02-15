@@ -32,7 +32,9 @@
       }
     </style>
   {{ end }}
-  <body{{ if or (eq .RelPermalink "/about/") (eq .RelPermalink "/es/about/") }} class="about"{{ end }}>
+  {{- $isHome := or (eq .RelPermalink "/") (eq .RelPermalink "/es/") -}}
+  {{- $isAbout := or (eq .RelPermalink "/about/") (eq .RelPermalink "/es/about/") -}}
+  <body{{ if or $isHome $isAbout }} class="{{ if $isHome }}home{{ end }}{{ if and $isHome $isAbout }} {{ end }}{{ if $isAbout }}about{{ end }}"{{ end }}>
     {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
     <main>
       {{ block "main" . }}{{ end }}
