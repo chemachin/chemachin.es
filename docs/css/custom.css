@@ -32,7 +32,7 @@ body.home main {
 body.home .home-quote {
   position: fixed;
   left: 50%;
-  bottom: 120px;
+  bottom: 160px;
   transform: translateX(-50%);
   max-width: 720px;
   font-family: 'Georgia', 'Times New Roman', serif;
@@ -91,7 +91,7 @@ body.about footer {
   }
   
   body.home .home-quote {
-    bottom: 150px;
+    bottom: 180px;
     max-width: 90%;
     font-size: 0.9rem;
     padding: 0 1rem;
@@ -121,7 +121,7 @@ body.about footer {
 
 @media (min-width: 2000px) {
   body.home .home-quote {
-    bottom: 130px;
+    bottom: 170px;
   }
 }
 /* Social icon hover brand colors */
