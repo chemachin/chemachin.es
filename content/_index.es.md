@@ -2,6 +2,6 @@
 title = "Inicio"
 +++
 
-*Simplicity requires hard work to achieve it*
+*La simplicidad requiere trabajo duro*
 
 — Edsger Dijkstra
