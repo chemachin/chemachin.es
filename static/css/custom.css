@@ -64,7 +64,7 @@ body.home .home-quote p + p {
   text-transform: none;
   text-align: right;
   opacity: 0.7;
-  padding-left: 72%;
+  padding-left: 58%;
 }
 
 body.home .home-quote p + p::before {
