@@ -20,12 +20,12 @@ body.about {
 /* Home quote between logo and social icons */
 body.home main {
   position: relative;
-  min-height: calc(100vh - 160px);
+  min-height: 100vh;
   padding: 0 2rem;
 }
 
 body.home .home-quote {
-  position: absolute;
+  position: fixed;
   left: 50%;
   bottom: 90px;
   transform: translateX(-50%);
@@ -39,6 +39,7 @@ body.home .home-quote {
   color: rgba(255, 255, 255, 0.85);
   margin: 0 auto;
   padding: 0 1.5rem;
+  z-index: 2;
 }
 
 /* Social icon hover brand colors */
