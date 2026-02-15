@@ -119,9 +119,21 @@ body.about footer {
   }
   
   body.home footer,
-  body.gallery footer,
-  body.about footer {
+  body.gallery footer {
     bottom: -36px;
+  }
+
+  body.about footer {
+    bottom: 0;
+  }
+
+  body.about {
+    background-size: 25% !important;
+    background-position: 50% 15% !important;
+  }
+
+  body.about main {
+    padding-bottom: 140px;
   }
 }
 
