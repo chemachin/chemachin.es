@@ -57,7 +57,7 @@ body.home .home-quote p:first-child {
 
 body.home .home-quote p + p {
   margin-top: 0.3rem;
-  margin-left: auto;
+  margin-left: 60%;
   font-style: normal;
   font-size: 0.68rem;
   letter-spacing: 0.12em;
@@ -65,8 +65,6 @@ body.home .home-quote p + p {
   text-transform: none;
   text-align: right;
   opacity: 0.7;
-  width: fit-content;
-  padding-left: 0;
 }
 
 body.home footer {
