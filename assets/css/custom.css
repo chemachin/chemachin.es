@@ -19,14 +19,16 @@ body.about {
 
 /* Home quote between logo and social icons */
 body.home main {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  position: relative;
   min-height: calc(100vh - 160px);
-  padding: 0 2rem 110px;
+  padding: 0 2rem;
 }
 
 body.home .home-quote {
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  transform: translateX(-50%);
   max-width: 720px;
   text-align: center;
   font-family: 'Georgia', 'Times New Roman', serif;
