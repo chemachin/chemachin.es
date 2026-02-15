@@ -25,14 +25,14 @@ body.home {
 
 body.home main {
   position: relative;
-  min-height: calc(100vh - 140px);
-  padding: 0 2rem;
+  min-height: 0;
+  padding: 0 2rem 160px;
 }
 
 body.home .home-quote {
   position: fixed;
   left: 50%;
-  bottom: 100px;
+  bottom: 120px;
   transform: translateX(-50%);
   max-width: 720px;
   text-align: center;
@@ -47,13 +47,17 @@ body.home .home-quote {
   z-index: 2;
 }
 
-@media (min-width: 2000px) {
-  body.home main {
-    min-height: calc(100vh - 180px);
-  }
+body.home footer {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  z-index: 1;
+}
 
+@media (min-width: 2000px) {
   body.home .home-quote {
-    bottom: 110px;
+    bottom: 130px;
   }
 }
 
