@@ -25,14 +25,14 @@ body.home {
 
 body.home main {
   position: relative;
-  min-height: calc(100vh - 160px);
-  padding: 0 2rem;
+  min-height: calc(100vh - 200px);
+  padding: 0 2rem 40px;
 }
 
 body.home .home-quote {
   position: fixed;
   left: 50%;
-  bottom: 90px;
+  bottom: 120px;
   transform: translateX(-50%);
   max-width: 720px;
   text-align: center;
