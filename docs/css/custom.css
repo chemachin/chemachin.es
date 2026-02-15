@@ -78,14 +78,14 @@ body.home footer {
 /* Mobile adjustments for quote */
 @media (max-width: 768px) {
   body.home {
-    background-position: center 35% !important;
-    background-size: 60% !important;
+    background-position: center 25% !important;
+    background-size: 55% !important;
   }
   
   body.home .home-quote {
-    bottom: 140px;
+    bottom: 100px;
     max-width: 90%;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     padding: 0 1rem;
   }
   
@@ -94,10 +94,14 @@ body.home footer {
   }
   
   body.home .home-quote p + p {
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
     margin-left: 0;
     text-align: center;
-    font-size: 0.62rem;
+    font-size: 0.6rem;
+  }
+  
+  body.home footer {
+    bottom: 10px;
   }
 }
 
