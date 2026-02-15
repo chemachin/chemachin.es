@@ -30,6 +30,18 @@
         font-weight: 300;
         letter-spacing: 0.02em;
       }
+
+      @media (max-width: 768px) {
+        body {
+          overflow-y: auto;
+        }
+        main {
+          height: auto;
+          align-items: flex-start;
+          padding: 6rem 1.5rem 140px;
+          overflow: visible;
+        }
+      }
     </style>
   {{ end }}
   {{- $isHome := or (eq .RelPermalink "/") (eq .RelPermalink "/es/") -}}
