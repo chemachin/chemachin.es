@@ -35,7 +35,9 @@ body.home .home-quote {
   bottom: 120px;
   transform: translateX(-50%);
   max-width: 720px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   font-family: 'Georgia', 'Times New Roman', serif;
   font-style: normal;
   font-size: 1.1rem;
@@ -53,10 +55,12 @@ body.home .home-quote p {
 
 body.home .home-quote p:first-child {
   font-style: italic;
+  flex: 1;
 }
 
 body.home .home-quote p + p {
-  margin-top: 0.15rem;
+  margin-top: 0;
+  margin-left: 2rem;
   font-style: normal;
   font-size: 0.68rem;
   letter-spacing: 0.12em;
@@ -64,11 +68,7 @@ body.home .home-quote p + p {
   text-transform: none;
   text-align: right;
   opacity: 0.7;
-  padding-left: 0;
-}
-
-body.home .home-quote p + p::before {
-  content: "— ";
+  white-space: nowrap;
 }
 
 body.home footer {
