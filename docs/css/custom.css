@@ -75,6 +75,27 @@ body.home footer {
   z-index: 1;
 }
 
+/* Mobile adjustments for quote */
+@media (max-width: 768px) {
+  body.home .home-quote {
+    bottom: 140px;
+    max-width: 90%;
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+  
+  body.home .home-quote p:first-child {
+    text-align: center;
+  }
+  
+  body.home .home-quote p + p {
+    margin-top: 0.5rem;
+    margin-left: 0;
+    text-align: center;
+    font-size: 0.62rem;
+  }
+}
+
 @media (min-width: 2000px) {
   body.home .home-quote {
     bottom: 130px;
