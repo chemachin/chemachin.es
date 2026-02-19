@@ -138,8 +138,9 @@ body.about footer {
   }
 
   body.about {
-    background-size: 25% !important;
-    background-position: 50% 15% !important;
+    background-size: 18% !important;
+    background-position: left 1rem top 4.5rem !important;
+    background-attachment: fixed !important;
     height: auto !important;
     min-height: 100vh !important;
     overflow: visible !important;
