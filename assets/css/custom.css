@@ -147,7 +147,7 @@ body.about footer {
   /* html.about body.about has higher specificity than html body.about above */
   html.about body.about {
     background-size: 15vw !important;
-    background-position: left 1rem top 5rem !important;
+    background-position: left 1rem top 3.5rem !important;
     display: flex !important;
     flex-direction: column !important;
   }
