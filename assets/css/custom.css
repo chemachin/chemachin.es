@@ -37,6 +37,10 @@ body.about main p {
   padding-bottom: 60px;
 }
 
+.about-logo-fixed {
+  display: none;
+}
+
 /* Home quote between logo and social icons */
 body.home {
   height: auto;
@@ -145,18 +149,20 @@ body.about footer {
     padding-bottom: 2rem !important;
   }
 
-  body.about::before {
-    content: '';
+  .about-logo-fixed {
+    display: block;
     position: fixed;
     top: 4.5rem;
     left: 1rem;
     width: 18vw;
-    height: 18vw;
-    background-image: url('/images/Chemachineb.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     z-index: -1;
     pointer-events: none;
+  }
+
+  .about-logo-fixed img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   body.about > main {

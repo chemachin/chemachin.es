@@ -23,6 +23,7 @@
   {{- $isAbout := or (eq .RelPermalink "/about/") (eq .RelPermalink "/es/about/") -}}
   {{- $isPhotography := or (eq .RelPermalink "/photography/") (eq .RelPermalink "/es/photography/") -}}
   <body{{ if or $isHome $isAbout $isPhotography }} class="{{ if $isHome }}home{{ end }}{{ if and $isHome $isAbout }} {{ end }}{{ if $isAbout }}about{{ end }}{{ if and (or $isHome $isAbout) $isPhotography }} {{ end }}{{ if $isPhotography }}gallery{{ end }}"{{ end }}>
+    {{ if $isAbout }}<div class="about-logo-fixed"><img src="/images/Chemachineb.png" alt=""></div>{{ end }}
     {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
     <main>
       {{ block "main" . }}{{ end }}
