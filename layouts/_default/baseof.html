@@ -1,6 +1,9 @@
 <!doctype html>
 {{- $theme := .Params.theme | default .Site.Params.defaultTheme }}
-<html class="{{- if (eq $theme "light") -}}light{{- else if (eq $theme "dark") }}dark{{ end }}" lang="{{- site.LanguageCode | default "en" -}}">
+  {{- $isHome := or (eq .RelPermalink "/") (eq .RelPermalink "/es/") -}}
+  {{- $isAbout := or (eq .RelPermalink "/about/") (eq .RelPermalink "/es/about/") -}}
+  {{- $isPhotography := or (eq .RelPermalink "/photography/") (eq .RelPermalink "/es/photography/") -}}
+<html class="{{- if (eq $theme "light") -}}light{{- else if (eq $theme "dark") }}dark{{ end }}{{ if $isAbout }} about{{ end }}" lang="{{- site.LanguageCode | default "en" -}}">
   {{ partial "head.html" . }}
   {{ if or (eq .RelPermalink "/about/") (eq .RelPermalink "/es/about/") }}
     <style>
@@ -23,7 +26,6 @@
   {{- $isAbout := or (eq .RelPermalink "/about/") (eq .RelPermalink "/es/about/") -}}
   {{- $isPhotography := or (eq .RelPermalink "/photography/") (eq .RelPermalink "/es/photography/") -}}
   <body{{ if or $isHome $isAbout $isPhotography }} class="{{ if $isHome }}home{{ end }}{{ if and $isHome $isAbout }} {{ end }}{{ if $isAbout }}about{{ end }}{{ if and (or $isHome $isAbout) $isPhotography }} {{ end }}{{ if $isPhotography }}gallery{{ end }}"{{ end }}>
-    {{ if $isAbout }}<div class="about-logo-fixed"><img src="/images/Chemachineb.png" alt=""></div>{{ end }}
     {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
     <main>
       {{ block "main" . }}{{ end }}

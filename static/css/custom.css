@@ -37,10 +37,6 @@ body.about main p {
   padding-bottom: 60px;
 }
 
-.about-logo-fixed {
-  display: none;
-}
-
 /* Home quote between logo and social icons */
 body.home {
   height: auto;
@@ -141,33 +137,18 @@ body.about footer {
     bottom: -36px;
   }
 
-  /* About mobile: body+html locked, only main scrolls → position:fixed works on all browsers */
-  html:has(body.about),
+  /* About mobile: html+body locked, only main scrolls → position:fixed and background both stay put */
+  html.about,
   body.about {
     height: 100vh !important;
     overflow: hidden !important;
   }
 
   body.about {
-    background-image: none !important;
+    background-size: 18vw !important;
+    background-position: left 1rem top 4.5rem !important;
     display: flex !important;
     flex-direction: column !important;
-  }
-
-  .about-logo-fixed {
-    display: block;
-    position: fixed;
-    top: 4.5rem;
-    left: 1rem;
-    width: 18vw;
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  .about-logo-fixed img {
-    width: 100%;
-    height: auto;
-    display: block;
   }
 
   body.about > main {
