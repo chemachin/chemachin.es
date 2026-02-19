@@ -144,19 +144,21 @@ body.about footer {
     overflow: hidden !important;
   }
 
-  body.about {
-    background-size: 18vw !important;
+  /* html.about body.about has higher specificity than html body.about above */
+  html.about body.about {
+    background-size: 15vw !important;
     background-position: left 1rem top 4.5rem !important;
     display: flex !important;
     flex-direction: column !important;
   }
 
   body.about > main {
+    display: block !important;
     flex: 1 !important;
     height: 0 !important;
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch !important;
-    padding: 4rem 1.5rem 2rem !important;
+    padding: 1.5rem 1.5rem 2rem !important;
     z-index: 1;
     position: relative;
   }
