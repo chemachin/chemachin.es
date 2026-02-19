@@ -151,11 +151,11 @@ body.about footer {
 
   .about-logo-fixed {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 4.5rem;
     left: 1rem;
     width: 18vw;
-    z-index: -1;
+    z-index: 0;
     pointer-events: none;
   }
 

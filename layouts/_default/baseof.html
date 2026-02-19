@@ -23,7 +23,31 @@
   {{- $isAbout := or (eq .RelPermalink "/about/") (eq .RelPermalink "/es/about/") -}}
   {{- $isPhotography := or (eq .RelPermalink "/photography/") (eq .RelPermalink "/es/photography/") -}}
   <body{{ if or $isHome $isAbout $isPhotography }} class="{{ if $isHome }}home{{ end }}{{ if and $isHome $isAbout }} {{ end }}{{ if $isAbout }}about{{ end }}{{ if and (or $isHome $isAbout) $isPhotography }} {{ end }}{{ if $isPhotography }}gallery{{ end }}"{{ end }}>
-    {{ if $isAbout }}<div class="about-logo-fixed"><img src="/images/Chemachineb.png" alt=""></div>{{ end }}
+    {{ if $isAbout }}
+    <div class="about-logo-fixed"><img src="/images/Chemachineb.png" alt=""></div>
+    <script>
+      (function() {
+        function initLogo() {
+          if (window.innerWidth > 768) return;
+          var logo = document.querySelector('.about-logo-fixed');
+          if (!logo) return;
+          var HEADER_HEIGHT = 72; /* ~4.5rem */
+          logo.style.position = 'absolute';
+          logo.style.left = '1rem';
+          function update() {
+            logo.style.top = (window.scrollY + HEADER_HEIGHT) + 'px';
+          }
+          window.addEventListener('scroll', update, { passive: true });
+          update();
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initLogo);
+        } else {
+          initLogo();
+        }
+      })();
+    </script>
+    {{ end }}
     {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
     <main>
       {{ block "main" . }}{{ end }}
