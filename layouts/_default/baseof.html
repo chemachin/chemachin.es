@@ -33,13 +33,17 @@
 
       @media (max-width: 768px) {
         body {
-          overflow-y: auto;
+          overflow-y: auto !important;
         }
         main {
+          display: block;
           height: auto;
-          align-items: flex-start;
-          padding: 6rem 1.5rem 140px;
+          min-height: calc(100svh - 120px);
+          padding: 6rem 1.5rem 220px;
           overflow: visible;
+        }
+        main > * {
+          margin: 0 auto;
         }
       }
     </style>

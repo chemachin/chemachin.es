@@ -125,6 +125,7 @@ body.about footer {
 
   body.about footer {
     bottom: 0;
+    z-index: 20;
   }
 
   body.about {
@@ -133,7 +134,7 @@ body.about footer {
   }
 
   body.about main {
-    padding-bottom: 140px;
+    padding-bottom: 220px;
   }
 }
 
