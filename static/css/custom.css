@@ -123,18 +123,21 @@ body.about footer {
     bottom: -36px;
   }
 
-  body.about footer {
-    bottom: 0;
-    z-index: 20;
-  }
-
   body.about {
     background-size: 25% !important;
     background-position: 50% 15% !important;
+    overflow-y: scroll !important;
   }
 
-  body.about main {
-    padding-bottom: 220px;
+  body.about > main {
+    height: auto !important;
+    min-height: auto;
+    padding: 6rem 1.5rem 160px;
+  }
+
+  body.about footer {
+    bottom: 0;
+    z-index: 20;
   }
 }
 
