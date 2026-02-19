@@ -141,8 +141,9 @@ body.about footer {
     background-size: 25% !important;
     background-position: 50% 15% !important;
     height: auto !important;
-    min-height: 0 !important;
+    min-height: 100vh !important;
     overflow: visible !important;
+    padding-bottom: 120px !important;
   }
 
   body.about > main {
@@ -151,7 +152,7 @@ body.about footer {
     max-height: none !important;
     min-height: 0 !important;
     overflow: visible !important;
-    padding: 4rem 1.5rem 130px !important;
+    padding: 4rem 1.5rem 0 !important;
   }
 
   body.about footer {
