@@ -4,19 +4,6 @@
   {{ partial "head.html" . }}
   {{ if or (eq .RelPermalink "/about/") (eq .RelPermalink "/es/about/") }}
     <style>
-      body {
-        background-position: 22% 18% !important;
-        background-size: 12% !important;
-        overflow: hidden;
-      }
-      main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: calc(100vh - 120px);
-        padding: 0 2rem;
-        overflow: hidden;
-      }
       main > * {
         max-width: 700px;
         text-align: center;
@@ -29,22 +16,6 @@
         color: rgba(255, 255, 255, 0.85);
         font-weight: 300;
         letter-spacing: 0.02em;
-      }
-
-      @media (max-width: 768px) {
-        body {
-          overflow-y: auto !important;
-        }
-        main {
-          display: block;
-          height: auto;
-          min-height: calc(100svh - 120px);
-          padding: 6rem 1.5rem 220px;
-          overflow: visible;
-        }
-        main > * {
-          margin: 0 auto;
-        }
       }
     </style>
   {{ end }}
