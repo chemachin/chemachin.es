@@ -155,11 +155,13 @@ body.about footer {
     background-image: url('/images/Chemachineb.png');
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 0;
+    z-index: -1;
     pointer-events: none;
   }
 
   body.about > main {
+    position: relative;
+    z-index: 1;
     display: block !important;
     height: auto !important;
     max-height: none !important;
