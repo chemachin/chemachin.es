@@ -190,7 +190,7 @@
       <div class="thumbnails-container">
         <div class="thumbnails" id="thumbnails">
           {{ range $index, $image := (.Resources.ByType "image") }}
-            {{ $thumbnail := .Filter (slice images.AutoOrient (images.Process "fit 1200x800")) }}
+            {{ $thumbnail := .Filter (slice images.AutoOrient (images.Process "fit 1000x667")) }}
             <div class="thumbnail-wrapper" data-index="{{ $index }}">
               <div class="thumbnail" data-index="{{ $index }}" data-src="{{ $thumbnail.RelPermalink }}" data-title="{{ .Title }}" data-link="{{ .Params.link }}" onclick="selectImage({{ $index }})">
                 <img src="{{ $thumbnail.RelPermalink }}" alt="{{ .Title }}" />
