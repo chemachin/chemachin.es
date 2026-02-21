@@ -7,5 +7,9 @@ content/gallery/Piclist.txt
 
 # Hugo build cache
 .hugo_build.lock
+
+# Hugo resources cache (regenerated locally)
+resources/
+
 # Local scripts (tools folder stays local only)
 tools/
