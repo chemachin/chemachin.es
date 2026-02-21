@@ -181,7 +181,7 @@
       <div class="main-image-container">
         <button class="nav-arrow prev" onclick="changeImage(-1)">&#10094;</button>
         <div class="main-image-wrapper" onclick="changeImage(1)">
-          <img id="main-image" src="" alt="" />
+          <img id="main-image" src="" alt="" draggable="false" />
         </div>
         <button class="nav-arrow next" onclick="changeImage(1)">&#10095;</button>
       </div>
@@ -193,7 +193,7 @@
             {{ $processed := .Filter (slice images.AutoOrient (images.Process "fit 1000x667")) }}
             <div class="thumbnail-wrapper" data-index="{{ $index }}">
               <div class="thumbnail" data-index="{{ $index }}" data-src="{{ $processed.RelPermalink }}" data-title="{{ .Title }}" data-link="{{ .Params.link }}" onclick="selectImage({{ $index }})">
-                <img src="{{ $processed.RelPermalink }}" alt="{{ .Title }}" />
+                <img src="{{ $processed.RelPermalink }}" alt="{{ .Title }}" draggable="false" />
               </div>
             </div>
           {{ end }}
@@ -218,6 +218,16 @@
           event.preventDefault();
           thumbnailsContainer.scrollLeft += event.deltaY;
         }, { passive: false });
+      }
+
+      const galleryViewer = document.querySelector('.gallery2-viewer');
+      if (galleryViewer) {
+        galleryViewer.addEventListener('dragstart', (event) => {
+          const target = event.target;
+          if (target && target.tagName === 'IMG') {
+            event.preventDefault();
+          }
+        });
       }
 
       function getStoredIndex() {
